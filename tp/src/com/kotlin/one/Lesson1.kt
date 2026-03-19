@@ -29,9 +29,20 @@ fun main() {
     // - If score between 50 and 60, print "Just passed!"
     // - If score between 61 and 99, print "Well done!"
 
-    TODO(
         "Exercise 2 Conditionals implementation"
-    )
+        var score: Int = 80
+
+    when {
+        score == 100 -> println("Perfect score!")
+
+        score < 0 || score > 100 -> println("Invalid score")
+
+        score in 0..49 -> println("you failed!")
+
+        score in 50..60 -> println("just passed!")
+
+        score in 61..99 -> println("well done")
+    }
 
     // ✅ EXERCISE 3 list and Loops:
     // Create a list of your favorite fruits
