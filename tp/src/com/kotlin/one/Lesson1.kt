@@ -12,9 +12,12 @@ fun main() {
     // Enforce `city` to be immutable and `temperature` mutable
     // Then print the sentence again after changing `temperature`
 
-    TODO(
-        "Exercise 1 Variables implementation"
-    )
+
+    val city: String = "Delmas"
+    var temperature: Double = 25.0
+
+    println("it is $temperature in $city")
+
 
 
     // ✅ EXERCISE 2 Conditionals:
