@@ -19,7 +19,6 @@ fun main() {
     println("it is $temperature in $city")
 
 
-
     // ✅ EXERCISE 2 Conditionals:
     // Create a variable `score` (Int)
     // Handle the following cases:
@@ -30,8 +29,8 @@ fun main() {
     // - If score between 61 and 99, print "Well done!"
 
 
-        "Exercise 2 Conditionals implementation"
-        var score: Int = 80
+    "Exercise 2 Conditionals implementation"
+    var score: Int = 80
 
     when {
         score == 100 -> println("Perfect score!")
@@ -52,8 +51,8 @@ fun main() {
     // Then, print the total number of fruits in the list
     // Ask the user to enter a fruit name and check if it's in the list
 
-        "Exercise 3 List and Loops implementation"
-        val fruits = listOf("ananas", "banana", "kiwi", "orange","Mango")
+    "Exercise 3 List and Loops implementation"
+    val fruits = listOf("ananas", "banana", "kiwi", "orange", "Mango")
 
     for (fruit in fruits) {
         println(fruit.uppercase())
@@ -63,10 +62,9 @@ fun main() {
 
     val userInput = "banana"
 
-    if (fruits.any { it.equals(userInput, ignoreCase= true) })
-    {
+    if (fruits.any { it.equals(userInput, ignoreCase = true) }) {
         println("\"$userInput\" is in your list!")
-    }else {
+    } else {
         println("\"$userInput\" is not in your list.")
     }
 
@@ -76,9 +74,14 @@ fun main() {
     // Print the number of characters in `nickname`
     // Print the nickname or "No nickname provided" if it's null using the Elvis operator
 
-    TODO(
-        "Exercise 4 Elvis Operator implementation"
-    )
+    "Exercise 4 Elvis Operator implementation"
+    val nickName: String? = null
+
+    val charCount = nickName?.length ?: 0
+    println("Number of characters: $charCount")
+
+    val displayName = nickName ?: "No nickname provided"
+    println(displayName)
 
 }
 
