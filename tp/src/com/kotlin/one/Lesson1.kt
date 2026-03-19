@@ -29,6 +29,7 @@ fun main() {
     // - If score between 50 and 60, print "Just passed!"
     // - If score between 61 and 99, print "Well done!"
 
+
         "Exercise 2 Conditionals implementation"
         var score: Int = 80
 
@@ -44,15 +45,31 @@ fun main() {
         score in 61..99 -> println("well done")
     }
 
+
     // ✅ EXERCISE 3 list and Loops:
     // Create a list of your favorite fruits
     // Loop through the list and print each fruit in uppercase
     // Then, print the total number of fruits in the list
     // Ask the user to enter a fruit name and check if it's in the list
 
-    TODO(
         "Exercise 3 List and Loops implementation"
-    )
+        val fruits = listOf("ananas", "banana", "kiwi", "orange","Mango")
+
+    for (fruit in fruits) {
+        println(fruit.uppercase())
+    }
+
+    println("Total fruits: ${fruits.size}")
+
+    val userInput = "banana"
+
+    if (fruits.any { it.equals(userInput, ignoreCase= true) })
+    {
+        println("\"$userInput\" is in your list!")
+    }else {
+        println("\"$userInput\" is not in your list.")
+    }
+
 
     // ✅EXERCISE 4 Elvis Operator:
     // Create a nullable variable `nickname` of type String? and assign it null
